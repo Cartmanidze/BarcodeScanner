@@ -53,7 +53,7 @@ namespace BarcodeScanner.ViewModels
         {
             var result = await _scanner.Scan();
             if (result == null) return;
-            _code = result.Text;
+            Code = result.Text;
         }
     }
 }
